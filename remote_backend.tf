@@ -5,7 +5,7 @@
 terraform {
   backend "remote" {
     hostname = "app.terraform.io"
-    organization = "jtpirate"
+    organization = "brandizzle-training"
     workspaces {
       name = "hashicat-azure"
     }
