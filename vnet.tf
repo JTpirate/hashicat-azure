@@ -1,7 +1,7 @@
 module "network" {
   source  = "app.terraform.io/brandizzle-training/network/azurerm"
   version = "2.0.0"
-  resource_group_name = azurerm_resource_group.myresourcegroup
+  resource_group_name = "${var.prefix}-workshop"
     location            = "centralus"
     address_space       = "10.0.0.0/16"
     subnet_prefixes     = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
